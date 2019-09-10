@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:text="Handrick's Bank - Choice your Option"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bcredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="creditCount"
+        android:text="Credit"
+        app:layout_constraintStart_toStartOf="@+id/bcreate"
+        app:layout_constraintTop_toBottomOf="@+id/bcreate" />
+
+    <Button
+        android:id="@+id/bcreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="createCount"
+        android:text="New Count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/bdebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="debitCount"
+        android:text="Debit"
+        app:layout_constraintStart_toStartOf="@+id/bcredit"
+        app:layout_constraintTop_toBottomOf="@+id/bcredit" />
+
+    <Button
+        android:id="@+id/btransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="transferCount"
+        android:text="Transfer"
+        app:layout_constraintStart_toStartOf="@+id/bdebit"
+        app:layout_constraintTop_toBottomOf="@+id/bdebit" />
+
+    <Button
+        android:id="@+id/bshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showCount"
+        android:text="Show Count"
+        app:layout_constraintStart_toStartOf="@+id/btransfer"
+        app:layout_constraintTop_toBottomOf="@+id/btransfer" />
+
+    <Button
+        android:id="@+id/baudit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="auditor"
+        android:text="Bank Audit"
+        app:layout_constraintStart_toStartOf="@+id/bshow"
+        app:layout_constraintTop_toBottomOf="@+id/bshow" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:onClick="closeProgram"
+        android:text="Close"
+        app:layout_constraintEnd_toEndOf="@+id/baudit"
+        app:layout_constraintTop_toBottomOf="@+id/baudit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
